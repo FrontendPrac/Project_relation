@@ -108,7 +108,7 @@ function PostForm() {
     };
   };
   return (
-    <div>
+    <StPostForm>
       <StPostTitle>
         <input
           maxLength="80"
@@ -175,11 +175,19 @@ function PostForm() {
         <button onClick={onRemove}>뒤로가기</button>
         <button onClick={onClick}>작성완료</button>
       </StPostFormButton>
-    </div>
+    </StPostForm>
   );
 }
 
 export default PostForm;
+
+const StPostForm = styled.div`
+  @media screen and (max-width: 768px) {
+    padding-top: 100px;
+    margin: auto;
+    width: 90%;
+  }
+`;
 
 const StPostFormButton = styled.div`
   display: flex;

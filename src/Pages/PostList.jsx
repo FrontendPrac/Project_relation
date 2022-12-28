@@ -74,12 +74,6 @@ function PostList() {
 }
 export default PostList;
 
-// const StHeader = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 0 20px;
-// `;
 const StListName = styled.div`
   margin: 20px;
   font-size: 30px;

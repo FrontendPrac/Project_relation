@@ -107,6 +107,11 @@ const StPost = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 10% 0 10%;
+  @media screen and (max-width: 768px) {
+    padding-top: 100px;
+    margin: auto;
+    width: 90%;
+  }
 `;
 const StButtonWrap = styled.div`
   margin: 10px;
